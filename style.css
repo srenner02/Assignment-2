@@ -1,0 +1,65 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #eef0f1;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: transparent;
+}
+
+li a {
+  display: block;
+  color: black;
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #434850;
+  color: white;
+}
+
+banner{
+  grid-area: banner;
+}
+
+header {
+  grid-area: header;
+  background-color: white;
+  text-align: center;
+}
+
+nav {
+  grid-area: menu;
+  background-color: white;
+ }
+
+main{
+  grid-area: main;
+  background-color: white;
+  align-self: start;
+}
+
+footer{
+  grid-area: footer;
+  background-color: white;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'banner banner banner'
+    'header header header'
+    'menu main main'
+    'footer footer footer';
+    grid-gap: 5px;
+    background-color: transparent;
+    align-content: space-between;
+}
