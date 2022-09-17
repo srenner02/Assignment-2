@@ -4,6 +4,14 @@ html, body {
   background-color: #eef0f1;
 }
 
+ol.a {
+  list-style-type: upper-roman;
+}
+
+ol.b{
+  list-style-type: lower-roman;
+}
+
 table, th, td {
   border:1px solid black;
 }
