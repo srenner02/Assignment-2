@@ -4,6 +4,19 @@ html, body {
   background-color: #eef0f1;
 }
 
+table, th, td {
+  border:1px solid black;
+  
+}
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
 ul {
   list-style-type: none;
   margin: 0;
