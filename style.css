@@ -1,9 +1,11 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: #eef0f1;
+  background-color: red;
 }
 
+
+/* Styling on Page 1*/
 ol.a {
   list-style-type: upper-roman;
 }
@@ -12,8 +14,24 @@ ol.b{
   list-style-type: lower-roman;
 }
 
+ol.b > li:nth-child(odd) {
+  background-color: lightcoral;
+}
+
+/* Table styling on page 2 */
 table, th, td {
   border:1px solid black;
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+}
+
+th{
+  color: white;
+  background-color: black;
+}
+
+td{
+  color: gold;
 }
 
 table{
@@ -40,7 +58,8 @@ table{
   display: inline-block;
 }
 
-ul.nav {
+/* Nav Bar Styling */
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -57,23 +76,27 @@ li a {
 
 /* Change the link color on hover */
 li a:hover {
-  background-color: #434850;
+  background-color: red;
   color: white;
 }
 
-banner{
-  grid-area: banner;
+/* Footer Styling */
+footer{
+  
 }
 
+/* Start of grid styling */
 header {
   grid-area: header;
   background-color: white;
+  font-family: Verdana, sans-serif;
   text-align: center;
 }
 
 nav {
   grid-area: menu;
   background-color: white;
+  font-size: 15px;
  }
 
 main{
@@ -99,4 +122,17 @@ footer{
     grid-gap: 5px;
     background-color: transparent;
     align-content: space-between;
+}
+
+/* Additional Styling Tags */
+h1{
+  color: blue;
+}
+
+h2{
+  color: blueviolet
+}
+
+p{
+  color: red;
 }
