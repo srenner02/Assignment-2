@@ -10,7 +10,7 @@
   <div class="grid-container">
     <header>
       <img src="Images/samspitstop-logo.jpg" alt="logo" width="200" height="100">
-      <h1>Home</h1>
+      <h1>Page 3 "Form Validation"</h1>
     </header>
 
   <nav>
@@ -27,16 +27,16 @@
     <form name="page3Form" action="https://webdevbasics.net/scripts/yoga.php" 
     onsubmit="return validateForm()" method="post">
     <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" size="50" maxlength="50" value="" 
-    required><br><br>
+    <input type="text" id="fname" name="fname" size="50" maxlength="50" value=""> 
+    <br><br>
     <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" size="50" maxlength="50" value="" 
-    required><br><br>
+    <input type="text" id="lname" name="lname" size="50" maxlength="50" value=""> 
+    <br><br>
     <label for="birth">Birth year:</label><br>
-    <input type="number" id="birth" name="birth" value="" min="1900" max="2022" 
-    required><br><br>
+    <input type="number" id="birth" name="birth" value="" min="1900" max="2022"> 
+    <br><br>
     <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" value="" required><br><br>
+    <input type="email" id="email" name="email" value=""><br><br>
     <label for="username">Username:</label><br>
     <input type="text" id="username" name="username" maxlength="10"   
     minlength="5" value="" required><br><br>
@@ -44,11 +44,12 @@
     <input type="password" id="password" name="password" minlength="8" value="" 
     required><br><br>
     <label for="password2">Re-enter password:</label><br>
-    <input type="password" id="password2" name="password2" minlength="8" value="" 
+    <input type="password" id="password2" name="password2" value="" 
     required><br><br>
     <label for="phone">Phone number:</label><br>
+    <!--placeholder and pattern pulled from https://www.w3schools.com/html/html_form_attributes.asp, edited to correctly match phone number regex-->
     <input type="tel" id="phone" name="phone" value="" placeholder="###-###-####"
-    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
     <input type="submit" value="Submit">
   </main>
     <script src="script.js"></script>
